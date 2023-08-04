@@ -20,7 +20,7 @@ namespace TesteManyToManyErro
     {
         public ModelContext CreateDbContext(string[] args)
         {
-            DbContextOptionsBuilder<ModelContext> dbContextOptionsBuilder = new DbContextOptionsBuilder<ModelContext>().UseSqlServer("Server=.\\sql2019;Database=DiscriminatorError;Trusted_Connection=false;user id=sa;pwd=sa!2019;MultipleActiveResultSets=true;Encrypt=False");
+            DbContextOptionsBuilder<ModelContext> dbContextOptionsBuilder = new DbContextOptionsBuilder<ModelContext>().UseSqlServer("Server=.\\sql2019;Database=AspNetIdentity;Trusted_Connection=false;user id=sa;pwd=*****;MultipleActiveResultSets=true;Encrypt=False");
             return new ModelContext(dbContextOptionsBuilder.Options);
         }
     }
